@@ -23,13 +23,19 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen bg-black pt-20">
       {/* Hero Section */}
-      <section className="py-20 bg-slate-900 text-white">
+      <section className="py-20 bg-black text-white">
+
+      <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-[#00f163]/10 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#00f163]/10 rounded-full blur-[100px] translate-x-1/2 translate-y-1/2"></div>
+      </div>
+
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-6">
-              Let's Transform Your Marketing
+              Let's  <span className="gradient-text"> Transform </span> Your Marketing
             </h1>
             <p className="text-xl text-gray-300">
               Schedule your free consultation and discover how AI can revolutionize your roofing marketing strategy.
@@ -39,37 +45,37 @@ const Contact = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-black text-white px-[20px] md:px-[100px]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-              <p className="text-gray-600 mb-8">
+              <p className="text-gray-300 mb-8">
                 Fill out the form below and we'll get back to you within 24 hours with a customized AI marketing strategy for your roofing business.
               </p>
               
               <div className="space-y-6">
                 <div className="flex items-center">
-                  <Phone className="h-6 w-6 text-cyan-500 mr-4" />
+                  <Phone className="h-6 w-6 text-[#00f163] mr-4" />
                   <div>
-                    <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <h3 className="font-semibold text-[#00f163]">Phone</h3>
+                    <p className="text-gray-400">(555) 123-4567</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <Mail className="h-6 w-6 text-cyan-500 mr-4" />
+                  <Mail className="h-6 w-6 text-[#00f163] mr-4" />
                   <div>
-                    <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-600">contact@clicktitan.ai</p>
+                    <h3 className="font-semibold text-[#00f163]">Email</h3>
+                    <p className="text-gray-400">contact@clicktitan.ai</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <MapPin className="h-6 w-6 text-cyan-500 mr-4" />
+                  <MapPin className="h-6 w-6 text-[#00f163] mr-4" />
                   <div>
-                    <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-600">123 AI Boulevard, Tech City, TC 12345</p>
+                    <h3 className="font-semibold text-[#00f163]">Location</h3>
+                    <p className="text-gray-400">123 AI Boulevard, Tech City, TC 12345</p>
                   </div>
                 </div>
               </div>
@@ -78,7 +84,7 @@ const Contact = () => {
             <div>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
                     Name
                   </label>
                   <input
@@ -93,7 +99,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
                     Email
                   </label>
                   <input
@@ -108,7 +114,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">
                     Phone
                   </label>
                   <input
@@ -123,7 +129,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
                     Message
                   </label>
                   <textarea
@@ -139,7 +145,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+                  className="w-full bg-[#00f163] hover:bg-green-300 text-black font-semibold py-3 px-6 rounded-lg transition-colors"
                 >
                   Schedule Free Consultation
                 </button>

@@ -163,7 +163,7 @@ const Home = () => {
     <div className="min-h-screen bg-black">
       <section className="h-screen relative overflow-hidden">
         {isLoading && (
-          <div className="absolute inset-0 flex items-center justify-center z-20">
+          <div className="absolute inset-0 flex items-center justify-center z-20 w-full h-screen bg-black/50">
             <Loader2 className="w-12 h-12 text-[#00f163] animate-spin" />
           </div>
         )}
@@ -180,6 +180,7 @@ const Home = () => {
           </div>
         )}
 
+{/* https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode */}
         <div className="absolute inset-0 w-full h-full">
           <Spline 
             scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode"

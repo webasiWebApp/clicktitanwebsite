@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import Services from './pages/Services';
 import CaseStudies from './pages/CaseStudies';
 import AiSeo from './pages/AiSeo';
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/services/ai-seo" element={<AiSeo />} />
