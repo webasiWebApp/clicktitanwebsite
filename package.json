@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://webasiWebApp.github.io/ClickTitan-website",
+  "homepage": "https://webasiWebApp.github.io/clicktitanwebsite",
 
   "scripts": {
     "dev": "vite",
