@@ -1,0 +1,36 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base hexagon -->
+  <path
+    d="M16 0L29.8564 8V24L16 32L2.14359 24V8L16 0Z"
+    fill="#00f163"
+    opacity="0.2"
+  />
+  
+  <!-- Spartan Helmet -->
+  <path
+    d="M16 6C11.2 6 8 9.6 8 12.8C8 14.4 8.8 16 10.4 17.6L9.6 20L11.2 20.8L12 19.2C13.2 20 14.4 20.4 16 20.4C17.6 20.4 18.8 20 20 19.2L20.8 20.8L22.4 20L21.6 17.6C23.2 16 24 14.4 24 12.8C24 9.6 20.8 6 16 6Z"
+    fill="#00f163"
+  />
+  
+  <!-- Helmet Crest -->
+  <path
+    d="M16 5L17.6 7.2V12C17.6 12.8 16.8 13.6 16 13.6C15.2 13.6 14.4 12.8 14.4 12V7.2L16 5Z"
+    fill="#00f163"
+  />
+  
+  <!-- Helmet Details -->
+  <path
+    d="M12 14.4C12.4 15.2 13.6 16 16 16C18.4 16 19.6 15.2 20 14.4"
+    stroke="#1a1a1a"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+  
+  <!-- Eye Slits -->
+  <path
+    d="M12.8 12.8H19.2"
+    stroke="#1a1a1a"
+    stroke-width="1.2"
+    stroke-linecap="round"
+  />
+</svg>
