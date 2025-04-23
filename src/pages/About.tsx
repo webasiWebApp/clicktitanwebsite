@@ -116,7 +116,7 @@ const About = () => {
 
       {/* Values Section */}
       <SectionBackground>
-        <div className="container mx-auto px-[100px] ">
+        <div className="container mx-auto px-[20px] md:px-[100px] ">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-white">
               Our Core Values
@@ -145,7 +145,7 @@ const About = () => {
 
       {/* Team Section */}
       <section className="py-20 bg-black">
-        <div className="container mx-auto px-4 px-[100px]">
+        <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-white">
               Meet Our Team

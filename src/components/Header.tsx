@@ -48,7 +48,7 @@ const Header = () => {
           : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto px-4 px-[100px]">
+      <nav className="container mx-auto px-4 px-[20px] md:px-[100px]">
         <div className="flex items-center justify-between h-20">
           <Link 
             to="/" 

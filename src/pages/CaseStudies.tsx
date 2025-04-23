@@ -107,7 +107,7 @@ const CaseStudies = () => {
 
       {/* Highlights Section */}
       <SectionBackground>
-        <div className="container mx-auto px-[100px]">
+        <div className="container mx-auto px-[20px] md:px-[100px]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {highlights.map((highlight, index) => (
               <div 
@@ -136,7 +136,7 @@ const CaseStudies = () => {
 
       {/* Case Studies Grid */}
       <section className="py-20 bg-black">
-        <div className="container mx-auto px-[100px]">
+        <div className="container mx-auto px-[20px] md:px-[100px]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {caseStudies.map((study) => (
               <div 

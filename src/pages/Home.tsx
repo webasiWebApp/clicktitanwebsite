@@ -188,7 +188,7 @@ const Home = () => {
           />
         </div>
 
-        <div className="relative z-10 h-full flex items-center px-[100px]">
+        <div className="relative z-10 h-full flex items-center px-[20px] md:px-[100px]">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl">
               <h1 className="text-6xl md:text-7xl font-bold mb-6">
@@ -222,7 +222,7 @@ const Home = () => {
       </section>
 
       <SectionBackground>
-        <div className="container mx-auto px-4 px-[100px]">
+        <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               AI-Powered Services that Transform Your Roofing Marketing
@@ -245,7 +245,7 @@ const Home = () => {
       </SectionBackground>
 
       <section className="py-20 bg-black relative overflow-hidden">
-        <div className="container mx-auto px-4 px-[100px]">
+        <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
               100s of Roofing Businesses Are Getting Results Like These
@@ -270,7 +270,7 @@ const Home = () => {
       </section>
 
       <section className="py-20 bg-black">
-        <div className="container mx-auto px-4 px-[100px]">
+        <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
               Trusted by Leading Roofing Companies
@@ -298,7 +298,7 @@ const Home = () => {
       </section>
 
       <SectionBackground>
-        <div className="container mx-auto px-4 px-[100px]">
+        <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
             Don't Just Take Our Word For It.<br />
             Here's What Our Clients Say:

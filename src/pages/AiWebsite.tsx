@@ -115,7 +115,7 @@ const AiWebsite = () => {
 
       {/* Features Section */}
       <SectionBackground>
-        <div className="container mx-auto px-4 px-[100px]">
+        <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-white">
               AI-Powered Features That Drive Results

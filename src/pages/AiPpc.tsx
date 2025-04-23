@@ -115,7 +115,7 @@ const AiPpc = () => {
 
       {/* Features Section */}
       <SectionBackground>
-        <div className="container mx-auto px-[100px]">
+        <div className="container mx-auto px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6 text-white">
               Smart PPC Features That Drive Results
