@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import Logo from './Logo';
+import Logo from '../assest/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,7 +54,8 @@ const Header = () => {
             to="/" 
             className="flex items-center group transition-transform duration-300 hover:scale-105"
           >
-            <Logo />
+           <img src={Logo} alt="Logo" className="w-32 h-auto" />
+
           </Link>
 
           {/* Desktop Navigation */}

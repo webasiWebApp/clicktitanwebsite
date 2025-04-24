@@ -6,7 +6,28 @@ import ServiceCard from '../components/ServiceCard';
 import SectionBackground from '../components/SectionBackground';
 import ROICard from '../components/ROICard';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; // core Swiper
+import 'swiper/css/autoplay';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// client logos
+import clientLogo1 from '../assest/clientLogo/clientLogo1.webp';
+import clientLogo2 from '../assest/clientLogo/clientLogo2.webp';
+import clientLogo3 from '../assest/clientLogo/clientLogo3.webp';
+import clientLogo4 from '../assest/clientLogo/clientLogo4.webp';
+import clientLogo5 from '../assest/clientLogo/clientLogo5.webp';
+import clientLogo6 from '../assest/clientLogo/clientLogo6.webp';
+import clientLogo7 from '../assest/clientLogo/clientLogo7.webp';
+import clientLogo8 from '../assest/clientLogo/clientLogo8.webp';
+
+
+
 const Home = () => {
+
+
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
 
@@ -63,27 +84,35 @@ const Home = () => {
   const trustedBy = [
     {
       name: "Premier Roofing",
-      logo: "https://placehold.co/200x80/1a1a1a/00f163?text=Premier+Roofing&font=raleway"
+      logo: clientLogo1
     },
     {
       name: "Elite Roof Systems",
-      logo: "https://placehold.co/200x80/1a1a1a/00f163?text=Elite+Roof+Systems&font=raleway"
+      logo: clientLogo2
     },
     {
       name: "Summit Roofing Solutions",
-      logo: "https://placehold.co/200x80/1a1a1a/00f163?text=Summit+Roofing&font=raleway"
+      logo:clientLogo3
     },
     {
       name: "Quality Roofing Co",
-      logo: "https://placehold.co/200x80/1a1a1a/00f163?text=Quality+Roofing&font=raleway"
+      logo: clientLogo4
     },
     {
       name: "Master Roofers",
-      logo: "https://placehold.co/200x80/1a1a1a/00f163?text=Master+Roofers&font=raleway"
+      logo: clientLogo5
     },
     {
       name: "Five Star Roofing",
-      logo: "https://placehold.co/200x80/1a1a1a/00f163?text=Five+Star+Roofing&font=raleway"
+      logo: clientLogo6
+    },
+    {
+      name: "Five Star Roofing",
+      logo:clientLogo7
+    },
+    {
+      name: "Five Star Roofing",
+      logo: clientLogo8
     }
   ];
 
@@ -270,7 +299,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-black overflow-hidden">
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
@@ -281,20 +310,34 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center opacity-0 animate-[fadeIn_1s_ease-in_forwards]">
-            {trustedBy.map((company, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center p-4 transition-transform hover:scale-105"
-              >
-                <img
-                  src={company.logo}
-                  alt={company.name}
-                  className="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
-                />
-              </div>
-            ))}
+          <div className="opacity-0 animate-[fadeIn_1s_ease-in_forwards]">
+            <Swiper
+               modules={[Autoplay, Navigation, Pagination]}
+              spaceBetween={30}
+              autoplay={{ delay: 1000, disableOnInteraction: false }}
+              loop={true}
+              
+              pagination={{ clickable: true }}
+              breakpoints={{
+                640: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 6 },
+              }}
+              className="!overflow-visible"
+            >
+              {trustedBy.map((company, index) => (
+                <SwiperSlide key={index} className="flex items-center justify-center p-4 transition-transform hover:scale-105">
+                  <img
+                    src={company.logo}
+                    alt={company.name}
+                    className="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
+
+
         </div>
       </section>
 

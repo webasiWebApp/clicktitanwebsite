@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
-import Logo from './Logo';
+import Logo from '../assest/logo.png';
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link to="/" className="flex items-center space-x-2">
-              <Logo className="h-12 w-auto" />
+             <img src={Logo} alt="Logo" className="w-32 h-auto" />
             </Link>
             <p className="mt-4 text-gray-400">
               Revolutionizing roofing marketing with AI-powered solutions that deliver better results for less.
