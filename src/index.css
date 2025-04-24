@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Space Grotesk", sans-serif !important;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -29,14 +35,18 @@
     @apply relative overflow-hidden;
   }
 
-  .section-bg::before {
+  .growPattern{
+    transform: translateY(300px);
+  }
+
+  /* .section-bg::before {
     content: '';
     @apply absolute inset-0 bg-gradient-to-b from-[#04e348]/5 to-transparent;
-  }
+  } */
 
   .section-bg::after {
     content: '';
-    @apply absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(4,227,72,0.15)_0%,transparent_70%)];
+    @apply absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(4,227,72,0.15)_0%,transparent_55%)];
   }
 
   /* Grid pattern overlay */
