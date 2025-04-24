@@ -40,13 +40,13 @@ const ROICard: React.FC<ROICardProps> = ({ roi, company, revenue, spend }) => {
   return (
     <div
       ref={cardRef}
-      className="roi-card bg-black/40 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-[#00f163]/50 transition-all duration-500 group"
+      className="roi-card bg-[#00f16408]  backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-[#00f163]/50 transition-all duration-500 group"
     >
       <div className="text-4xl font-bold text-[#00f163] mb-2">
         {roi} ROI
       </div>
       
-      <div className="text-xl font-semibold text-white mb-4">
+      <div className="text-xl text-[#c8ced8] mb-4">
         {company}
       </div>
       

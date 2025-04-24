@@ -23,6 +23,15 @@ import clientLogo6 from '../assest/clientLogo/clientLogo6.webp';
 import clientLogo7 from '../assest/clientLogo/clientLogo7.webp';
 import clientLogo8 from '../assest/clientLogo/clientLogo8.webp';
 
+// partner logos
+
+import partnerLogo1 from '../assest/partnersLogo/ptLogo1.png';
+import partnerLogo2 from '../assest/partnersLogo/ptLogo2.png';
+import partnerLogo3 from '../assest/partnersLogo/ptLogo3.png';
+import partnerLogo4 from '../assest/partnersLogo/ptLogo4.png';
+import partnerLogo5 from '../assest/partnersLogo/ptLogo5.png';
+import partnerLogo6 from '../assest/partnersLogo/ptLogo6.png';
+import partnerLogo7 from '../assest/partnersLogo/ptLogo7.png';
 
 
 const Home = () => {
@@ -113,6 +122,38 @@ const Home = () => {
     {
       name: "Five Star Roofing",
       logo: clientLogo8
+    }
+  ];
+
+
+  const partnerBy = [
+    {
+      name: "Premier Roofing",
+      logo: partnerLogo1
+    },
+    {
+      name: "Elite Roof Systems",
+      logo: partnerLogo2
+    },
+    {
+      name: "Summit Roofing Solutions",
+      logo:partnerLogo3
+    },
+    {
+      name: "Quality Roofing Co",
+      logo: partnerLogo4
+    },
+    {
+      name: "Master Roofers",
+      logo: partnerLogo5
+    },
+    {
+      name: "Five Star Roofing",
+      logo: partnerLogo6
+    },
+    {
+      name: "Five Star Roofing",
+      logo:partnerLogo7
     }
   ];
 
@@ -212,7 +253,7 @@ const Home = () => {
 {/* https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode */}
         <div className="absolute inset-0 w-full h-full">
           <Spline 
-            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode"
+            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecodef"
             onLoad={handleSplineLoad}
             onError={handleSplineError}
             className='opacity-70
@@ -282,7 +323,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4 text-white">
               {/* 100s of Roofing Businesses Are Getting Results Like These */}
-              100s of Roofers See Results—You Could Be Next!
+              100s of Roofers See Results—<span className='kotta-one-regular'>You Could Be Next!</span> 
             </h2>
             <p className="text-xl text-[#00f163] font-semibold">
               It's highly likely one of them is your competitor
@@ -314,7 +355,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="opacity-0 animate-[fadeIn_1s_ease-in_forwards]">
+          <div className="opacity-0 animate-[fadeIn_1s_ease-in_forwards] mt-[70px]">
             <Swiper
                modules={[Autoplay, Navigation, Pagination]}
               spaceBetween={30}
@@ -349,19 +390,19 @@ const Home = () => {
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <h2 className="text-4xl md:text-5xl text-white text-center mb-16">
             Don't Just Take Our Word For It.<br />
-            Here's What Our Clients Say:
+            <span className='kotta-one-regular'>Here's What Our Clients Say:</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="relative pt-12">
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+              <div key={index} className="relative ">
+                {/* <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-16 h-16 rounded-full border-4 border-[#00f163] shadow-lg shadow-[#00f163]/20"
                   />
-                </div>
+                </div> */}
 
                 <div className="bg-black/40 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
                   <h3 className="text-2xl font-bold text-[#00f163] text-center mb-4">
@@ -372,17 +413,34 @@ const Home = () => {
                     "{testimonial.quote}"
                   </p>
 
-                  <div className="text-center">
-                    <p className="font-bold text-white">{testimonial.name}</p>
-                    <p className="text-gray-400">{testimonial.company}</p>
-                    <p className="text-gray-400 mb-4">{testimonial.location}</p>
+                  <div className='grid grid-cols-3 gap-4 w-full'>
 
-                    <div className="flex justify-center space-x-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-[#00f163] fill-[#00f163]" />
-                      ))}
+                    <div className="left">
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-16 h-16 rounded-full border-[#00f163] shadow-lg shadow-[#00f163]/20 ms-[20px]"
+                      />
+                      
                     </div>
+
+                    <div className="right col-span-2 flex justify-start">
+                      <div className="text-left">
+                        <p className="font-bold text-white">{testimonial.name}</p>
+                        <p className="text-gray-400">{testimonial.company}</p>
+                        <p className="text-gray-400 mb-4">{testimonial.location}</p>
+
+                        <div className="flex justify-start space-x-1">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="w-5 h-5 text-[#00f163] fill-[#00f163]" />
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+
                   </div>
+
                 </div>
               </div>
             ))}
@@ -435,6 +493,47 @@ const Home = () => {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-black overflow-hidden">
+        <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl mb-4 text-white">
+            Backed by Trusted Partners You Know
+            </h2>
+            <p className="text-xl text-gray-400">
+            Our partners help us deliver AI-powered marketing that gets real results            </p>
+          </div>
+
+          <div className="opacity-0 animate-[fadeIn_1s_ease-in_forwards] mt-[70px]">
+            <Swiper
+               modules={[Autoplay, Navigation, Pagination]}
+              spaceBetween={30}
+              autoplay={{ delay: 1000, disableOnInteraction: false }}
+              loop={true}
+              
+              pagination={{ clickable: true }}
+              breakpoints={{
+                640: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 6 },
+              }}
+              className="!overflow-visible"
+            >
+              {partnerBy.map((company, index) => (
+                <SwiperSlide key={index} className="flex items-center justify-center p-4 transition-transform hover:scale-105">
+                  <img
+                    src={company.logo}
+                    alt={company.name}
+                    className="max-h-20 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+
         </div>
       </section>
 

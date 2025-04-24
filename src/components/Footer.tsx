@@ -5,8 +5,8 @@ import Logo from '../assest/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-12">
-      <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
+    <footer className="bg-black text-white pt-12 pb-6">
+      <div className="container mx-auto px-4 px-[20px] md:px-[100px] pt-[50px]">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link to="/" className="flex items-center space-x-2">
