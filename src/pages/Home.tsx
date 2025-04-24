@@ -253,7 +253,7 @@ const Home = () => {
 {/* https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode */}
         <div className="absolute inset-0 w-full h-full">
           <Spline 
-            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecodef"
+            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode"
             onLoad={handleSplineLoad}
             onError={handleSplineError}
             className='opacity-70
