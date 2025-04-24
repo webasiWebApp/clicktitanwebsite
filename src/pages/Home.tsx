@@ -212,7 +212,7 @@ const Home = () => {
 {/* https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode */}
         <div className="absolute inset-0 w-full h-full">
           <Spline 
-            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecodef"
+            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode"
             onLoad={handleSplineLoad}
             onError={handleSplineError}
             className='opacity-70
@@ -256,8 +256,9 @@ const Home = () => {
       <SectionBackground>
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              AI-Powered Services that Transform Your Roofing Marketing
+            <h2 className="text-4xl md:text-5xl  mb-6 text-white">
+              {/* AI-Powered Services that Transform Your Roofing Marketing */}
+              AI-Powered Roofing Marketing Solutions
             </h2>
             <div className="w-24 h-1 bg-[#00f163] mx-auto"></div>
           </div>
@@ -279,8 +280,9 @@ const Home = () => {
       <section className="py-20 bg-black relative overflow-hidden">
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-              100s of Roofing Businesses Are Getting Results Like These
+            <h2 className="text-4xl md:text-5xl mb-4 text-white">
+              {/* 100s of Roofing Businesses Are Getting Results Like These */}
+              100s of Roofers See Results—You Could Be Next!
             </h2>
             <p className="text-xl text-[#00f163] font-semibold">
               It's highly likely one of them is your competitor
@@ -304,7 +306,7 @@ const Home = () => {
       <section className="py-20 bg-black overflow-hidden">
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            <h2 className="text-4xl md:text-5xl mb-4 text-white">
               Trusted by Leading Roofing Companies
             </h2>
             <p className="text-xl text-gray-400">
@@ -345,7 +347,7 @@ const Home = () => {
 
       <SectionBackground>
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
-          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
+          <h2 className="text-4xl md:text-5xl text-white text-center mb-16">
             Don't Just Take Our Word For It.<br />
             Here's What Our Clients Say:
           </h2>
@@ -391,8 +393,9 @@ const Home = () => {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Getting started is as easy as 1, 2, 3
+            <h2 className="text-4xl md:text-5xl mb-6 text-white">
+              {/* Getting started is as easy as 1, 2, 3 */}
+              Start in 3 Easy Steps
             </h2>
             <div className="w-24 h-1 bg-[#00f163] mx-auto"></div>
           </div>
