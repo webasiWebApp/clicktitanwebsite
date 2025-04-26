@@ -13,6 +13,9 @@ import AiLsa from './pages/AiLsa';
 import AiWebsite from './pages/AiWebsite';
 import AiFacebook from './pages/AiFacebook';
 import AiScheduling from './pages/AiScheduling';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermOfUse from './pages/TermOfUse';
+import CaseStudiesMore from './pages/CaseStudyMore';
 
 function App() {
   return (
@@ -26,12 +29,16 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
             <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/case-studies/:id" element={<CaseStudiesMore />} />
             <Route path="/services/ai-seo" element={<AiSeo />} />
             <Route path="/services/ai-ppc" element={<AiPpc />} />
             <Route path="/services/ai-lsa" element={<AiLsa />} />
             <Route path="/services/ai-website" element={<AiWebsite />} />
             <Route path="/services/ai-facebook" element={<AiFacebook />} />
             <Route path="/services/ai-scheduling" element={<AiScheduling />} />
+            <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+            <Route path="/termofuse" element={<TermOfUse />} />
+           
           </Routes>
         </main>
         <Footer />

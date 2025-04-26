@@ -108,7 +108,11 @@ const About = () => {
               <span className="text-white">Roofing Marketing with AI</span>
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              At ClickTitan, we're on a mission to transform how roofing companies approach marketing. By leveraging cutting-edge AI technology, we deliver better results while reducing costs.
+            At ClickTitan Marketing, we’re revolutionizing roofing marketing by harnessing the power of artificial intelligence. Specializing in roofing companies, we deliver cutting-edge, AI-driven strategies that slash costs while maximizing impact. Our mission is to empower roofers with innovative tools and data-driven insights to dominate their local markets. <br />
+
+            With a focus on trust and results, we combine sleek, modern design with advanced technology to create campaigns that resonate. From intelligent lead generation to optimized digital presence, our team is at the forefront of the industry, ensuring your roofing business stands out in a competitive landscape. <br /><br />
+
+            Partner with ClickTitan and experience the future of roofing marketing—where AI meets expertise to build your brand, attract high-quality leads, and drive measurable growth.
             </p>
           </div>
         </div>
@@ -116,15 +120,15 @@ const About = () => {
 
       {/* Values Section */}
       <SectionBackground>
-        <div className="container mx-auto px-[20px] md:px-[100px] ">
+        <div className="container mx-auto px-[20px] md:px-[100px] h-[100vh]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-white">
+            <h2 className="text-4xl mb-6 text-white">
               Our Core Values
             </h2>
             <div className="w-24 h-1 bg-[#00f163] mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {values.map((value, index) => (
               <div 
                 key={index}
@@ -144,10 +148,10 @@ const About = () => {
       </SectionBackground>
 
       {/* Team Section */}
-      <section className="py-20 bg-black">
+      <section className="pb-20 bg-black">
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-white">
+            <h2 className="text-4xl mb-6 text-white">
               Meet Our Team
             </h2>
             <div className="w-24 h-1 bg-[#00f163] mx-auto"></div>

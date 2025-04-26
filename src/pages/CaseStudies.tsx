@@ -3,39 +3,69 @@ import { ArrowRight, TrendingUp, Target, Users, Rocket } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SectionBackground from '../components/SectionBackground';
 
+import caseStudy1 from "../assest/caseStudy/caseStudy1.png"
+import caseStudy2 from "../assest/caseStudy/caseStudy2.png"
+import caseStudy3 from "../assest/caseStudy/caseStudy3.png"
+import caseStudy4 from "../assest/caseStudy/caseStudy4.png"
+import caseStudy5 from "../assest/caseStudy/caseStudy5.png"
+
 const CaseStudies = () => {
   const caseStudies = [
     {
-      id: "abc-roofing",
-      title: "Doubling Leads for ABC Roofing with AI SEO",
-      description: "Learn how our AI-powered SEO strategy helped ABC Roofing achieve a 100% increase in qualified leads while reducing their marketing spend by 40%.",
-      thumbnail: "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      id: "safeguard-impact",
+      title: "Massive ROI for SafeGuard Impact Using AI + Google Ads",
+      description: "Find out how SafeGuard Impact achieved $147,501 in revenue in just 1 month, securing a 32.07x ROAS and maximizing returns with high-converting AI advertising.",
+      thumbnail: caseStudy1,
       results: [
-        { metric: "Lead Increase", value: "100%" },
-        { metric: "Cost Reduction", value: "40%" },
-        { metric: "ROI", value: "280%" }
+        { metric: "Inbound Leads", value: "82" },
+        { metric: "Number of Sits", value: "22" },
+        { metric: "ROAs", value: "32.07x" }
       ]
     },
     {
-      id: "xyz-roofers",
-      title: "Cutting Costs for XYZ Roofers with Automated Ads",
-      description: "Discover how our AI-driven advertising automation helped XYZ Roofers optimize their ad spend and achieve better targeting results.",
-      thumbnail: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      id: "highlow-roofing",
+      title: "Driving Over $400K Revenue for HighLow Roofing with AI + Google Ads",
+      description: "Learn how our targeted AI-powered strategy helped HighLow Roofing generate 42 closed jobs, $408,024 in revenue, and a 22.66x ROAS — while keeping cost per job at just $428.",
+      thumbnail: caseStudy2,
       results: [
-        { metric: "Ad Cost Reduction", value: "35%" },
-        { metric: "Click-through Rate", value: "+85%" },
-        { metric: "Conversion Rate", value: "+45%" }
+        { metric: "Inbound Calls", value: "364" },
+        { metric: "Number of Sits", value: "114" },
+        { metric: "ROAs", value: "22.66x" }
       ]
     },
     {
-      id: "peak-roofing",
-      title: "Peak Roofing's Social Media Transformation",
-      description: "See how our AI social media management system helped Peak Roofing establish a strong online presence and generate consistent leads.",
-      thumbnail: "https://images.unsplash.com/photo-1622993295842-5cea471a14d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      id: "remarkable-roofing",
+      title: "Helping Remarkable Roofing Grow Fast with AI + Google Ads",
+      description: "See how our AI-driven campaigns delivered 36 jobs, $320,892 in revenue, and a 15.84x ROAS for Remarkable Roofing — all with a highly efficient cost per acquisition.",
+      thumbnail: caseStudy3,
       results: [
-        { metric: "Social Engagement", value: "+150%" },
-        { metric: "Lead Quality", value: "+60%" },
-        { metric: "Response Time", value: "-75%" }
+        { metric: "Inbound Calls", value: "315" },
+        { metric: "Number of Sites", value: "109" },
+        { metric: "ROIs", value: "15.84x" }
+      ]
+    }
+    ,
+    {
+      id: "genroof",
+      title: "Skyrocketing Revenue for GenRoof with AI + Google Ads",
+      description: "Learn how we delivered $161,501 in roofing project revenue for GenRoof within just two months, achieving a 17.94x ROAS and a strong lead-to-sale pipeline.",
+      thumbnail: caseStudy4,
+      results: [
+        { metric: "Inbound Leads", value: "112" },
+        { metric: "Number of Sites", value: "38" },
+        { metric: "ROIs", value: "17.94x" }
+      ]
+    }
+    ,
+    {
+      id: "caprica-homes",
+      title: "Boosting Revenue and Cutting Costs for Caprica Homes with AI + Google Ads",
+      description: "Discover how we helped Caprica Homes secure 50 new jobs, generating $561,623 in revenue and a 21.72x ROAS, while keeping their cost per call under $63.",
+      thumbnail: caseStudy5,
+      results: [
+        { metric: "Inbound Calls", value: "413" },
+        { metric: "Number of Sites", value: "113" },
+        { metric: "ROIs", value: "21.72x" }
       ]
     }
   ];

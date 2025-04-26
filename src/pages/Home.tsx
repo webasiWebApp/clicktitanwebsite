@@ -253,7 +253,7 @@ const Home = () => {
 {/* https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode */}
         <div className="absolute inset-0 w-full h-full">
           <Spline 
-            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode"
+            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecodef"
             onLoad={handleSplineLoad}
             onError={handleSplineError}
             className='opacity-70
@@ -500,7 +500,7 @@ const Home = () => {
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl mb-4 text-white">
-            Backed by Trusted Partners You Know
+            Backed by Trusted Partners <span className='kotta-one-regular'> You Know </span>
             </h2>
             <p className="text-xl text-gray-400">
             Our partners help us deliver AI-powered marketing that gets real results            </p>

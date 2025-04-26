@@ -117,7 +117,7 @@ const AiPpc = () => {
       <SectionBackground>
         <div className="container mx-auto px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-white">
+            <h2 className="text-4xl mb-6 text-white">
               Smart PPC Features That Drive Results
             </h2>
             <div className="w-24 h-1 bg-[#00f163] mx-auto"></div>
@@ -146,7 +146,7 @@ const AiPpc = () => {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-white">
+            <h2 className="text-4xl mb-6 text-white">
               The ClickTitan PPC Advantage
             </h2>
             <div className="w-24 h-1 bg-[#00f163] mx-auto"></div>
@@ -177,7 +177,7 @@ const AiPpc = () => {
       <SectionBackground>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-white">
+            <h2 className="text-4xl mb-6 text-white">
               How Our AI Optimizes Your PPC
             </h2>
             <div className="w-24 h-1 bg-[#00f163] mx-auto"></div>
@@ -246,7 +246,7 @@ const AiPpc = () => {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-white">
+            <h2 className="text-4xl mb-6 text-white">
               What Our Clients Say
             </h2>
             <div className="w-24 h-1 bg-[#00f163] mx-auto"></div>
