@@ -19,6 +19,12 @@ import CaseStudiesMore from './pages/CaseStudyMore';
 
 import ScrollToTop from './components/ScrollToTop';
 
+// 
+// npm run deploy
+// git add .
+// git commit -m "first commit"
+// git push -u origin gh-pages
+
 function App() {
   return (
     <Router>
