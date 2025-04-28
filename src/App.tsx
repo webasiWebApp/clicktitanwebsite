@@ -17,12 +17,15 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermOfUse from './pages/TermOfUse';
 import CaseStudiesMore from './pages/CaseStudyMore';
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white">
         <Header />
         <main>
+        <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
