@@ -273,7 +273,7 @@ const Home = () => {
           className="w-full h-full object-cover"
         />
         {/* Black overlay */}
-  <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <Spline 
             scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecodef"
             onLoad={handleSplineLoad}
