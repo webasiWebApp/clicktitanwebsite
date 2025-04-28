@@ -13,6 +13,8 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import bgVid from "../assest/bgVideo.mp4"
+
 // client logos
 import clientLogo1 from '../assest/clientLogo/clientLogo1.png';
 import clientLogo2 from '../assest/clientLogo/clientLogo2.png';
@@ -262,6 +264,16 @@ const Home = () => {
 
 {/* https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode */}
         <div className="absolute inset-0 w-full h-full">
+        <video 
+          src={bgVid}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+        />
+        {/* Black overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-70"></div>
           <Spline 
             scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecodef"
             onLoad={handleSplineLoad}
