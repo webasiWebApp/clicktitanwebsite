@@ -14,14 +14,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // client logos
-import clientLogo1 from '../assest/clientLogo/clientLogo1.webp';
-import clientLogo2 from '../assest/clientLogo/clientLogo2.webp';
-import clientLogo3 from '../assest/clientLogo/clientLogo3.webp';
-import clientLogo4 from '../assest/clientLogo/clientLogo4.webp';
-import clientLogo5 from '../assest/clientLogo/clientLogo5.webp';
-import clientLogo6 from '../assest/clientLogo/clientLogo6.webp';
-import clientLogo7 from '../assest/clientLogo/clientLogo7.webp';
-import clientLogo8 from '../assest/clientLogo/clientLogo8.webp';
+import clientLogo1 from '../assest/clientLogo/clientLogo1.png';
+import clientLogo2 from '../assest/clientLogo/clientLogo2.png';
+// import clientLogo3 from '../assest/clientLogo/clientLogo3.png';
+import clientLogo4 from '../assest/clientLogo/clientLogo4.png';
+import clientLogo5 from '../assest/clientLogo/clientLogo5.png';
+import clientLogo6 from '../assest/clientLogo/clientLogo6.png';
+import clientLogo7 from '../assest/clientLogo/clientLogo7.png';
+import clientLogo8 from '../assest/clientLogo/clientLogo8.png';
 
 // partner logos
 
@@ -93,35 +93,38 @@ const Home = () => {
   const trustedBy = [
     {
       name: "Premier Roofing",
-      logo: clientLogo1
+      logo: clientLogo1,
+      logoSize: "max-h-16"
     },
     {
       name: "Elite Roof Systems",
-      logo: clientLogo2
-    },
-    {
-      name: "Summit Roofing Solutions",
-      logo:clientLogo3
+      logo: clientLogo2,
+      logoSize: "max-h-16"
     },
     {
       name: "Quality Roofing Co",
-      logo: clientLogo4
+      logo: clientLogo4,
+      logoSize: "max-h-16"
     },
     {
       name: "Master Roofers",
-      logo: clientLogo5
+      logo: clientLogo5,
+      logoSize: "max-h-[200px]"
     },
     {
       name: "Five Star Roofing",
-      logo: clientLogo6
+      logo: clientLogo6,
+      logoSize: "max-h-16"
     },
     {
       name: "Five Star Roofing",
-      logo:clientLogo7
+      logo:clientLogo7,
+      logoSize: "max-h-16"
     },
     {
       name: "Five Star Roofing",
-      logo: clientLogo8
+      logo: clientLogo8,
+      logoSize: "max-h-16"
     }
   ];
 
@@ -129,31 +132,38 @@ const Home = () => {
   const partnerBy = [
     {
       name: "Premier Roofing",
-      logo: partnerLogo1
+      logo: partnerLogo1,
+      logoSize: "max-h-16"
     },
     {
       name: "Elite Roof Systems",
-      logo: partnerLogo2
+      logo: partnerLogo2,
+      logoSize: "max-h-16"
     },
     {
       name: "Summit Roofing Solutions",
-      logo:partnerLogo3
+      logo:partnerLogo3,
+      logoSize: "max-h-[130px]"
     },
     {
       name: "Quality Roofing Co",
-      logo: partnerLogo4
+      logo: partnerLogo4,
+      logoSize: "max-h-16"
     },
     {
       name: "Master Roofers",
-      logo: partnerLogo5
+      logo: partnerLogo5,
+      logoSize: "max-h-16"
     },
     {
       name: "Five Star Roofing",
-      logo: partnerLogo6
+      logo: partnerLogo6,
+      logoSize: "max-h-[130px]"
     },
     {
       name: "Five Star Roofing",
-      logo:partnerLogo7
+      logo:partnerLogo7,
+      logoSize: "max-h-[130px]"
     }
   ];
 
@@ -253,7 +263,7 @@ const Home = () => {
 {/* https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode */}
         <div className="absolute inset-0 w-full h-full">
           <Spline 
-            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecodef"
+            scene="https://prod.spline.design/JkbunnoptndzJvcC/scene.splinecode"
             onLoad={handleSplineLoad}
             onError={handleSplineError}
             className='opacity-70
@@ -297,7 +307,7 @@ const Home = () => {
       <SectionBackground>
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl  mb-6 text-white">
+            <h2 className="text-4xl font-bold md:text-5xl  mb-6 text-white">
               {/* AI-Powered Services that Transform Your Roofing Marketing */}
               AI-Powered Roofing Marketing Solutions
             </h2>
@@ -321,7 +331,7 @@ const Home = () => {
       <section className="py-20 bg-black relative overflow-hidden">
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl mb-4 text-white">
+            <h2 className="text-4xl font-bold md:text-5xl mb-4 text-white">
               {/* 100s of Roofing Businesses Are Getting Results Like These */}
               100s of Roofers See Results—<span className='kotta-one-regular'>You Could Be Next!</span> 
             </h2>
@@ -347,7 +357,7 @@ const Home = () => {
       <section className="py-20 bg-black overflow-hidden">
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl mb-4 text-white">
+            <h2 className="text-4xl font-bold md:text-5xl mb-4 text-white">
               Trusted by Leading Roofing Companies
             </h2>
             <p className="text-xl text-gray-400">
@@ -355,31 +365,30 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="opacity-0 animate-[fadeIn_1s_ease-in_forwards] mt-[70px]">
-            <Swiper
-               modules={[Autoplay, Navigation, Pagination]}
-              spaceBetween={30}
-              autoplay={{ delay: 1000, disableOnInteraction: false }}
-              loop={true}
-              
-              pagination={{ clickable: true }}
-              breakpoints={{
-                640: { slidesPerView: 2 },
-                768: { slidesPerView: 3 },
-                1024: { slidesPerView: 6 },
-              }}
-              className="!overflow-visible"
-            >
-              {trustedBy.map((company, index) => (
-                <SwiperSlide key={index} className="flex items-center justify-center p-4 transition-transform hover:scale-105">
-                  <img
-                    src={company.logo}
-                    alt={company.name}
-                    className="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
-                  />
-                </SwiperSlide>
+          <div className="flex flex-col items-center gap-8">
+            {/* Top row: 4 logos */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 place-items-center">
+              {trustedBy.slice(0, 4).map((company, index) => (
+                <img
+                  key={index}
+                  src={company.logo}
+                  alt={company.name}
+                  className={company.logoSize +" w-auto opacity-100 hover:opacity-100 transition-opacity duration-300"}
+                />
               ))}
-            </Swiper>
+            </div>
+
+            {/* Bottom row: 3 logos, centered */}
+            <div className="grid grid-cols-3 gap-6 place-items-center">
+              {trustedBy.slice(4).map((company, index) => (
+                <img
+                  key={index + 4}
+                  src={company.logo}
+                  alt={company.name}
+                  className={company.logoSize +" w-auto opacity-100 hover:opacity-100 transition-opacity duration-300"}
+                />
+              ))}
+            </div>
           </div>
 
 
@@ -388,7 +397,7 @@ const Home = () => {
 
       <SectionBackground>
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
-          <h2 className="text-4xl md:text-5xl text-white text-center mb-16">
+          <h2 className="text-4xl font-bold md:text-5xl text-white text-center mb-16">
             Don't Just Take Our Word For It.<br />
             <span className='kotta-one-regular'>Here's What Our Clients Say:</span>
           </h2>
@@ -451,7 +460,7 @@ const Home = () => {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl mb-6 text-white">
+            <h2 className="text-4xl font-bold md:text-5xl mb-6 text-white">
               {/* Getting started is as easy as 1, 2, 3 */}
               Start in 3 Easy Steps
             </h2>
@@ -499,14 +508,14 @@ const Home = () => {
       <section className="py-20 bg-black overflow-hidden">
         <div className="container mx-auto px-4 px-[20px] md:px-[100px]">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl mb-4 text-white">
+            <h2 className="text-4xl font-bold md:text-5xl mb-4 text-white">
             Backed by Trusted Partners <span className='kotta-one-regular'> You Know </span>
             </h2>
             <p className="text-xl text-gray-400">
             Our partners help us deliver AI-powered marketing that gets real results            </p>
           </div>
 
-          <div className="opacity-0 animate-[fadeIn_1s_ease-in_forwards] mt-[70px]">
+          {/* <div className="opacity-0 animate-[fadeIn_1s_ease-in_forwards] mt-[70px]">
             <Swiper
                modules={[Autoplay, Navigation, Pagination]}
               spaceBetween={30}
@@ -531,6 +540,32 @@ const Home = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+          </div> */}
+
+          <div className="flex flex-col items-center gap-8">
+            {/* Top row: 4 logos */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 place-items-center">
+              {partnerBy.slice(0, 4).map((company, index) => (
+                <img
+                  key={index}
+                  src={company.logo}
+                  alt={company.name}
+                  className={company.logoSize +" w-auto opacity-100 hover:opacity-100 transition-opacity duration-300"}
+                />
+              ))}
+            </div>
+
+            {/* Bottom row: 3 logos, centered */}
+            <div className="grid grid-cols-3 gap-6 place-items-center">
+              {partnerBy.slice(4).map((company, index) => (
+                <img
+                  key={index + 4}
+                  src={company.logo}
+                  alt={company.name}
+                  className={company.logoSize +" w-auto opacity-100 hover:opacity-100 transition-opacity duration-300"}
+                />
+              ))}
+            </div>
           </div>
 
 
